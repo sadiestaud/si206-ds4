@@ -43,6 +43,12 @@ class TestCases(unittest.TestCase):
         self.assertEqual(factorial(-5), None, "testing that the value -5 will return None")
     def test_f4(self):
         self.assertEqual(factorial(5), 120, "testing that the value 5 will return 120")
+    def test_ly1(self):
+        self.assertEqual(check_leap_year(1900), False, "testing that 1900 will return false")
+    def test_ly2(self):
+        self.assertEqual(check_leap_year(1912), True, "testing that 1912 will return true")
+    def test_ly3(self):
+        self.assertEqual(check_leap_year(2000), True, "testing that 2000 will return true")
 
 
 
